@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf3f3;
+    transition: background-color 0.5s;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ca76cd;
+    color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav.scrolled {
+    background-color: #dda0dd;
+    transform: translateY(-10px);
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold ;
+    font-family:Ga Maamli;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family:Ga Maamli;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #6cbced;
+    transform: scale(1.1);
+}
+
+.content {
+    padding-top: 70px; /* Adjusted to account for nav bar height */
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+
+
+#home h1, #home p {
+    margin-bottom: 30px;
+}
+
+.home-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.slide {
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+
+.home-slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+#products {
+    background-color: #ffe4e1;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    background-color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.img-p {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+  }
+
+#about {
+    background-color: #f0e6ef;
+}
+
+#about img {
+    max-width: 50%;
+    height: 50%;
+    margin-top: 20px;
+}
